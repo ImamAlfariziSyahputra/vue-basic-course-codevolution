@@ -1,7 +1,9 @@
 <script>
+import Portal from './components/Portal.vue';
+
 export default {
   name: 'App',
-  components: {},
+  components: { Portal },
   data() {
     return {};
   },
@@ -10,7 +12,9 @@ export default {
 </script>
 
 <template>
-  <h2>App Component</h2>
+  <teleport to="#portal-root">
+    <Portal />
+  </teleport>
 </template>
 
 <style>

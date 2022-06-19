@@ -1,16 +1,18 @@
 <script>
+import TemplateRef from './components/TemplateRef.vue';
+
 export default {
-  name: 'App',
-  components: {},
+  components: {
+    TemplateRef,
+  },
   data() {
     return {};
   },
-  methods: {},
 };
 </script>
 
 <template>
-  <h2>App Component</h2>
+  <TemplateRef />
 </template>
 
 <style>

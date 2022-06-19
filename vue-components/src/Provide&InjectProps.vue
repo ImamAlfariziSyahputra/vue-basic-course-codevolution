@@ -1,16 +1,27 @@
 <script>
+import ComponentC from './components/ComponentC.vue';
+
 export default {
   name: 'App',
-  components: {},
-  data() {
-    return {};
+  components: {
+    ComponentC,
   },
-  methods: {},
+  data() {
+    return {
+      username: 'Lazy Pizy',
+    };
+  },
+  provide() {
+    return {
+      username: this.username,
+    };
+  },
 };
 </script>
 
 <template>
-  <h2>App Component</h2>
+  <h3>App Component Username - {{ username }}</h3>
+  <ComponentC />
 </template>
 
 <style>

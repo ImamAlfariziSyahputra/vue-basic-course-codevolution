@@ -1,16 +1,21 @@
 <script>
+import PostList from './components/PostList.vue';
+import CreatePost from './components/CreatePost.vue';
+
 export default {
-  name: 'App',
-  components: {},
+  components: {
+    PostList,
+    CreatePost,
+  },
   data() {
     return {};
   },
-  methods: {},
 };
 </script>
 
 <template>
-  <h2>App Component</h2>
+  <CreatePost />
+  <PostList />
 </template>
 
 <style>

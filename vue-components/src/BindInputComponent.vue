@@ -1,16 +1,20 @@
 <script>
+import Input from './components/Input.vue';
+
 export default {
   name: 'App',
-  components: {},
+  components: { Input },
   data() {
-    return {};
+    return {
+      name: '',
+    };
   },
   methods: {},
 };
 </script>
 
 <template>
-  <h2>App Component</h2>
+  <Input v-model="name" />
 </template>
 
 <style>

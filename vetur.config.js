@@ -1,1 +1,3 @@
-module.exports = { projects: ['./hello-world', './vue-components'] };
+module.exports = {
+  projects: ['./hello-world', './vue-components', './vue-http'],
+};

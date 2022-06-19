@@ -1,17 +1,13 @@
 <script>
 export default {
-  name: 'App',
   components: {},
   data() {
     return {};
   },
-  methods: {},
 };
 </script>
 
-<template>
-  <h2>App Component</h2>
-</template>
+<template></template>
 
 <style>
 #app {
